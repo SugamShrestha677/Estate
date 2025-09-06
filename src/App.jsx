@@ -4,12 +4,14 @@ import Hero from "./sections/Hero";
 import './App.css'
 import About from "./sections/About";
 import PopularAreas from './sections/PopularAreas'
+import Properties from "./sections/Properties";
 const App = () => {
   return (
 <DarkModeProvider>
 <Hero/> 
 <About/>
 <PopularAreas/>
+<Properties/>
 </DarkModeProvider>
 
   );
