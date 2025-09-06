@@ -3,6 +3,7 @@ import { DarkModeProvider } from "./Components/DarkModeContext";
 import Hero from "./sections/Hero";
 import './App.css'
 import About from "./sections/About";
+import Services from "./sections/Services";
 import PopularAreas from './sections/PopularAreas'
 import Properties from "./sections/Properties";
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
 <About/>
 <PopularAreas/>
 <Properties/>
+<Services/>
 </DarkModeProvider>
 
   );
