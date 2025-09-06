@@ -42,11 +42,13 @@ const Services = () => {
           </h1>
         </div>
 
-        <div id="service-box" className="grid lg:grid-cols-3 grid-cols-1  justify-center items-center gap-8">
+        <div className="max-w-screen-xl mx-auto px-0">
+
+        <div id="service-box" className="grid lg:grid-cols-3 grid-cols-1 gap-12 place-items-center">
           {
             service.map((item,index)=>(
               
-              <div data-aos="zoom-in" data-aos-delay="200" key={index} className="bg-white dark:bg-black h-[350px] px-8 py-16 flex flex-col justify-center items-start gap-4 rounded-xl border-b-[5px] border-red-600 hover:bg-red-300 cursor-pointer">
+              <div data-aos="zoom-in" data-aos-delay="200" key={index} className="w-full max-w-sm bg-white dark:bg-black h-[350px] px-8 py-16 flex flex-col justify-center items-start gap-4 rounded-xl border-b-[5px] border-red-600 hover:bg-red-300 cursor-pointer">
                 <div className="p-6 rounded-full bg-red-200">
                   <item.icon className="text-red-600 size-10 transform hover:scale-110 transition-transform duration-300 cursor-pointer"/>
                 </div>
@@ -60,6 +62,8 @@ const Services = () => {
           }
 
         </div>
+        </div>
+
       </section>
     </div>
   );
