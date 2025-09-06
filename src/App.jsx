@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 import './App.css'
 import About from "./sections/About";
 import Services from "./sections/Services";
+import Clients from "./sections/Clients";
 import PopularAreas from './sections/PopularAreas'
 import Properties from "./sections/Properties";
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
 <PopularAreas/>
 <Properties/>
 <Services/>
+<Clients/>
 </DarkModeProvider>
 
   );
