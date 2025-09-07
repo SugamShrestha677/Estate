@@ -32,12 +32,12 @@ const Properties = () => {
         className="lg:w-[90%] m-auto lg:px-20 px-6 py-20 w-full flex flex-col justify-center items-start gap-10"
       >
         <div className="flex flex-col justify-center items-start gap-4">
-          <h1 data-aos="zoom-in" className="text-red-500 dark:text-white">
+          <h1 data-aos="zoom-in" className={`text-red-500 ${darkMode ? 'text-white' : 'text-red-500'}`}>
             PROPERTIES
           </h1>
           <h1
             data-aos="zoom-in"
-            className="text-black text-4xl font-semibold dark:text-white"
+            className={`text-4xl font-semibold ${darkMode ? 'text-white' : 'text-black'}`}
           >
             Explore the Latest
           </h1>
@@ -53,7 +53,7 @@ const Properties = () => {
               data-aos="zoom-in"
               data-aos-delay="200"
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-xl w-full"
+              className={`${darkMode ? 'bg-gray-800' : 'bg-white'} rounded-xl w-full`}
             >
               <div
                 id="image-box"
@@ -98,22 +98,22 @@ const Properties = () => {
 
 
               <div className="px-6 py-3 flex flex-col justify-center items-start gap-2 w-full ">
-                <h1 className="text-xl text-black font-semibold dark:text-white">{item.name}</h1>
-                <h1 className="text-2xl text-red-600 font-bold dark:text-white">{item.price}</h1>
-                <p className="dark:text-white">{item.about}</p>
+                <h1 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-black'}`}>{item.name}</h1>
+                <h1 className={`text-2xl text-red-600 font-bold ${darkMode ? 'text-white' : 'text-red-600'}`}>{item.price}</h1>
+                <p className={`${darkMode ? 'text-white' : 'text-gray-600'}`}>{item.about}</p>
 {/* Icons */}
                 <div id="icons" className="flex justify-center items-start gap-4">
                   <div className="flex justify-center items-center gap-2">
                     <FaBath className="size-5 text-red-400"/>
-                    <h1 className="dark:text-white">{item.bath}</h1>
+                    <h1 className={`${darkMode ? 'text-white' : 'text-gray-600'}`}>{item.bath}</h1>
                   </div>
                   <div className="flex justify-center items-center gap-2">
                     <FaBed className="size-5 text-red-400"/>
-                    <h1 className="dark:text-white">{item.bed}</h1>
+                    <h1 className={`${darkMode ? 'text-white' : 'text-gray-600'}`}>{item.bed}</h1>
                   </div>
                   <div className="flex justify-center items-center gap-2">
                     <MdSpaceDashboard className="size-5 text-red-400"/>
-                    <h1 className="dark:text-white">{item.area}</h1>
+                    <h1 className={`${darkMode ? 'text-white' : 'text-gray-600'}`}>{item.area}</h1>
                   </div>
                 </div>
 
@@ -124,7 +124,7 @@ const Properties = () => {
                 <div id="Owner-info" className="flex justify-between items-center w-full mt-2">
                   <div className="flex justify-center items-center gap-2 ">
                     <FaUserCircle className="size-5 text-red-400 "/>
-                    <h1 className="dark:text-white ">{item.owner}</h1>
+                    <h1 className={`${darkMode ? 'text-white' : 'text-gray-600'}`}>{item.owner}</h1>
                   </div>
 
 

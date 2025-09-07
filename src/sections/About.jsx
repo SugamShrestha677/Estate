@@ -32,13 +32,13 @@ const About = () => {
       </div>
 
       <div className="flex flex-col justify-center items-start gap-8">
-        <h1 data-aos="zoom-in" className="text-red-500 dark:text-white">
+        <h1 data-aos="zoom-in" className={`text-red-500 ${darkMode ? 'text-white' : 'text-red-500'}`}>
           WHO WE ARE
         </h1>
         <h1
           data-aos="zoom-in"
           data-aos-delay="200"
-          className="text-black text-[40px] font-semibold leading-10 dark:text-white"
+          className={`text-[40px] font-semibold leading-10 ${darkMode ? 'text-white' : 'text-black'}`}
         >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </h1>
@@ -46,13 +46,13 @@ const About = () => {
         <p
           data-aos="zoom-in"
           data-aos-delay="400"
-          className="text-xl text-gray-600 dark:text-white text-justify"
+          className={`text-xl text-justify ${darkMode ? 'text-white' : 'text-gray-600'}`}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A ex, illum
           est culpa suscipit repellat praesentium, non, sint quidem harum
           facilis animi nesciunt eaque veritatis.
         </p>
-        <button type="submit" className="bg-red-600 dark:bg-red-700 hover:bg-black dark:hover:bg-white dark:hover:text-black text-lg p-4 text-white font-semibold rounded-xl cursor-pointer transform hover:scale-110 transition-transform duration-300">Read More</button>
+        <button type="submit" className={`${darkMode ? 'bg-red-700 hover:bg-white hover:text-black' : 'bg-red-600 hover:bg-black'} text-lg p-4 text-white font-semibold rounded-xl cursor-pointer transform hover:scale-110 transition-transform duration-300`}>Read More</button>
       </div>
     </section>
   );

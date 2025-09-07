@@ -26,25 +26,25 @@ const Contact = () => {
       >
         <div
           data-aos="zoom-in"
-          className="bg-white dark:bg-black p-10 flex flex-col justify-center items-start gap-4 rounded-xl"
+          className={`${darkMode ? 'bg-black' : 'bg-white'} p-10 flex flex-col justify-center items-start gap-4 rounded-xl`}
         >
-          <h1 className="text-2xl text-black font-semibold dark:text-white ">
-            Sen us a message today
+          <h1 className={`text-2xl font-semibold ${darkMode ? 'text-white' : 'text-black'}`}>
+            Send us a message today
           </h1>
           <input
             type="text"
             placeholder="Enter your full name here"
-            className="w-full px-6 py-3 border-2 border-gray-200 rounded-xl"
+            className={`w-full px-6 py-3 border-2 border-gray-200 rounded-xl focus:outline-0 ${darkMode ? "bg-white":""}`}
           />
           <input
             type="email"
             placeholder="Enter your valid email"
-            className="w-full px-6 py-3 border-2 border-gray-200 rounded-xl"
+            className={`w-full px-6 py-3 border-2 border-gray-200 rounded-xl focus:outline-0 ${darkMode ? "bg-white":""}`}
           />
           <input
             type="number"
             placeholder="Enter your valid mobile number"
-            className="w-full px-6 py-3 border-2 border-gray-200 rounded-xl"
+            className={`w-full px-6 py-3 border-2 border-gray-200 rounded-xl focus:outline-0 ${darkMode ? "bg-white":""}`}
           />
           <textarea
             name=""
@@ -52,9 +52,9 @@ const Contact = () => {
             cols="30"
             rows="5"
             placeholder="Enter your message here..."
-            className="w-full px-6 py-3 border-2 border-gray-200 rounded-xl"
+            className={`w-full px-6 py-3 border-2 border-gray-200 rounded-xl focus:outline-0 ${darkMode ? "bg-white":""}`}
           ></textarea>
-          <button className="w-full bg-red-600 text-md px-8 py-3 text-white font-semibold rounded-xl hover:bg-black dark:hover:bg-red-700 cursor-pointer">
+          <button className={`w-full bg-red-600 text-md px-8 py-3 text-white font-semibold rounded-xl ${darkMode ? 'hover:bg-red-700' : 'hover:bg-black'} cursor-pointer`}>
             SEND EMAIL
           </button>
         </div>
@@ -62,20 +62,20 @@ const Contact = () => {
           <h1
             data-aos="zoom-in"
             data-aos-delay="200"
-            className="text-red-500 dark:text-white"
+            className={`text-red-500 ${darkMode ? 'text-white' : 'text-red-500'}`}
           >
             REACH US
           </h1>
           <h1
             data-aos="zoom-in"
             data-aos-delay="200"
-            className="text-black text-[40px] font-semibold leading-10 dark:text-white"
+            className={`text-[40px] font-semibold leading-10 ${darkMode ? 'text-white' : 'text-black'}`}
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             architecto?
           </h1>
-          <p data-aos="zoom-in" data-aos-delay="600" className="text-xl text-gray-600 text-justify dark:text-white ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo officiis harum vel possimus provident sunt doloremque quisquam ab incidunt sequi. Repellat, commodi? Distinctio, reprehenderit voluptatem?</p>
-        <button className=" bg-red-600 text-md px-8 py-3 text-white font-semibold rounded-xl hover:bg-black dark:hover:bg-red-700 cursor-pointer">
+          <p data-aos="zoom-in" data-aos-delay="600" className={`text-xl text-justify ${darkMode ? 'text-white' : 'text-gray-600'}`}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo officiis harum vel possimus provident sunt doloremque quisquam ab incidunt sequi. Repellat, commodi? Distinctio, reprehenderit voluptatem?</p>
+        <button className={`bg-red-600 text-md px-8 py-3 text-white font-semibold rounded-xl ${darkMode ? 'hover:bg-red-700' : 'hover:bg-black'} cursor-pointer`}>
           SEND EMAIL
         </button>
         </div>

@@ -30,13 +30,13 @@ const Services = () => {
         <div className="flex flex-col justify-center items-start gap-4">
           <h1
             data-aos="zoom-in"
-            className="text-red-500 dark:text-white capitalize"
+            className={`text-red-500 capitalize ${darkMode ? 'text-white' : 'text-red-500'}`}
           >
             Our Services
           </h1>
           <h1
             data-aos="zoom-in"
-            className="text-black text-[40px] font-semibold leading-10 dark:text-white"
+            className={`text-[40px] font-semibold leading-10 ${darkMode ? 'text-white' : 'text-black'}`}
           >
            Top real estate <br />services available
           </h1>
@@ -48,15 +48,15 @@ const Services = () => {
           {
             service.map((item,index)=>(
               
-              <div data-aos="zoom-in" data-aos-delay="200" key={index} className="w-full max-w-sm bg-white dark:bg-black h-[350px] px-8 py-16 flex flex-col justify-center items-start gap-4 rounded-xl border-b-[5px] border-red-600 hover:bg-red-300 cursor-pointer">
+              <div data-aos="zoom-in" data-aos-delay="200" key={index} className={`w-full max-w-sm ${darkMode ? 'bg-black' : 'bg-white'} h-[350px] px-8 py-16 flex flex-col justify-center items-start gap-4 rounded-xl border-b-[5px] border-red-600 hover:bg-red-300 cursor-pointer`}>
                 <div className="p-6 rounded-full bg-red-200">
                   <item.icon className="text-red-600 size-10 transform hover:scale-110 transition-transform duration-300 cursor-pointer"/>
                 </div>
 
 
-                <h1 className="text-black text-[22px] font-semibold dark:text-white">{item.title}</h1>
-                <p className="text-lg text-slate-700 dark:text-white">{item.desc}</p>
-                <button className="border-b-2 border-red-600 text-red-600 font-semibold p-0 dark:text-white">READ MORE</button>
+                <h1 className={`text-[22px] font-semibold ${darkMode ? 'text-white' : 'text-black'}`}>{item.title}</h1>
+                <p className={`text-lg ${darkMode ? 'text-white' : 'text-slate-700'}`}>{item.desc}</p>
+                <button className={`border-b-2 border-red-600 text-red-600 font-semibold p-0 ${darkMode ? 'text-white' : 'text-red-600'}`}>READ MORE</button>
               </div>
             ))
           }

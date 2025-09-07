@@ -55,7 +55,7 @@ const Hero = () => {
           } lg:w-[70%] w-full m-auto grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-6 p-8 rounded-xl -mt-14`}
         >
           <div className="w-full">
-            <h1 className="text-black font-semibold dark:text-white">
+            <h1 className={`font-semibold ${darkMode ? 'text-white' : 'text-black'}`}>
               LOCATION
             </h1>
             <input
@@ -66,7 +66,7 @@ const Hero = () => {
           </div>
 
           <div className="w-full">
-            <h1 className="text-black font-semibold dark:text-white">TYPE</h1>
+            <h1 className={`font-semibold ${darkMode ? 'text-white' : 'text-black'}`}>TYPE</h1>
             <select name="selectOption" id="selectOption" className="bg-white p-2 border-b-[1px] w-full mt-2 border-[#c9c7c1] text-gray-500 text-md">
               <option value="" disabled selected>Select Property</option>
               <option value="Option1" >Rentals</option>
@@ -78,7 +78,7 @@ const Hero = () => {
 
 
           <div className="w-full">
-            <h1 className="text-black font-semibold dark:text-white">Category</h1>
+            <h1 className={`font-semibold ${darkMode ? 'text-white' : 'text-black'}`}>Category</h1>
             <select name="selectOption" id="selectOption" className="bg-white p-2 border-b-[1px] w-full mt-2 border-[#c9c7c1] text-gray-500 text-md">
               <option value="" disabled selected>Property Category</option>
               <option value="Option1" >Appartments</option>
@@ -91,7 +91,7 @@ const Hero = () => {
 
 
           <div className="w-full ">
-            <button type="submit" className="bg-red-600 dark:bg-red-700 hover:bg-black dark:hover:bg-white dark:hover:text-black text-lg p-4 w-full text-white font-semibold rounded-xl cursor-pointer transform hover:scale-110 transition-transform duration-300">SUBMIT</button>
+            <button type="submit" className={`${darkMode ? 'bg-red-700 hover:bg-white hover:text-black' : 'bg-red-600 hover:bg-black'} text-lg p-4 w-full text-white font-semibold rounded-xl cursor-pointer transform hover:scale-110 transition-transform duration-300`}>SUBMIT</button>
 
           </div>
         </div>
