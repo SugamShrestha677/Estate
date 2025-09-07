@@ -13,7 +13,7 @@ import Footer from "./Components/Footer";
 const App = () => {
   return (
 <DarkModeProvider>
-  <Header/>
+<Header/>
 <Hero/> 
 <About/>
 <PopularAreas/>

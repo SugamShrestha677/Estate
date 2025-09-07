@@ -89,10 +89,10 @@ const PopularAreas = () => {
             className="flex justify-center lg:items-center gap-8 w-full"
           >
             <h1 className={`font-semibold text-7xl ${darkMode ? 'text-white' : 'text-black'}`}>
-              5K
+              9K
             </h1>
             <h1 className={`font-semibold text-xl ${darkMode ? 'text-white' : 'text-black'}`}>
-              ACTIVE <br /> LISTINGS
+              SOLID <br /> LISTINGS
             </h1>
           </div>
           <div
@@ -101,10 +101,10 @@ const PopularAreas = () => {
             className="flex justify-center lg:items-center gap-8 w-full"
           >
             <h1 className={`font-semibold text-7xl ${darkMode ? 'text-white' : 'text-black'}`}>
-              5K
+              6K
             </h1>
             <h1 className={`font-semibold text-xl ${darkMode ? 'text-white' : 'text-black'}`}>
-              ACTIVE <br /> LISTINGS
+              CLIENTS <br /> WE'VE SERVED
             </h1>
           </div>
         </div>
